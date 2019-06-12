@@ -1,0 +1,31 @@
+{
+    "name": "redis",
+    "version": "3.1.3RC2-beta",
+    "type": "extension",
+    "license": [
+        "PHP"
+    ],
+    "authors": [
+        {
+            "name": "Nicolas Favre-Felix",
+            "email": "n.favrefelix@gmail.com"
+        },
+        {
+            "name": "Michael Grunder",
+            "email": "michael.grunder@gmail.com"
+        },
+        {
+            "name": "Pavlo Yatsukhnenko",
+            "email": "p.yatsukhnenko@gmail.com"
+        }
+    ],
+    "description": "PHP extension for interfacing with Redis",
+    "extra": {
+        "configure-options": {
+            "enable-redis-igbinary": {
+                "default": "no",
+                "prompt": "enable igbinary serializer support?"
+            }
+        }
+    }
+}
