@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<link rel="stylesheet" href="./rem.css">
+	<style type="text/css">
+	/*header*/
+	#header{
+		height:3rem;
+		padding:.4rem 0;
+		line-height:3rem;
+		background-color:#d52049;
+		font-size:1.4rem;
+	}
+	#header a.left{
+		width:10rem;
+		height:100%;
+		text-align:center;
+		color:#ffffff;
+	}
+	#header a.left span{
+		display:inline-block;
+		width:2rem;
+		height:1.3rem;
+		margin-top:.9rem;
+		margin-left:-.8rem;
+		background:url('./images/ico_01.png') no-repeat left center;
+	}
+	#header input{
+		width:15rem;
+		height:2.5rem;
+		border-radius:1rem;
+		border:none;
+		margin-top:.3rem;
+		box-sizing:border-box;
+		color:#eee;
+		text-indent:3rem;
+		background:url("./images/ico_02.png") no-repeat .6rem center;
+		background-color:rgba(101,112,100,0.5);
+		margin-left:.5rem;
+		line-height:2.5rem;
+
+	}
+	#header a.right{
+		width:5.2rem;
+	}
+	#header a.right span{
+		width:82%;
+		display:inline-block;
+		text-align:right;	
+		color:#ffffff;
+		background:url("./images/ico_03.png") no-repeat left center;
+	}
+	</style>
+</head>
+<body>
+	<header id="header" class="clearfix">
+		<a href="" class="left">北京市海淀区<span class="right"></span></a>
+		<input type="text" class="left" placeholder="输入店铺,商品等" name=""/>
+		<a href="" class="right"><span>我的</span></a>
+	</header>
+</body>
+<script type="text/javascript">
+	(function(){
+		var html = document.documentElement;
+		var curWidth = html.getBoundingClientRect().width;
+		var rWidth = curWidth/37.5;
+		html.style.fontSize = rWidth+'px';
+	})()
+</script>
+</html>
