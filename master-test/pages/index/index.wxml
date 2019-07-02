@@ -1,0 +1,37 @@
+<view class="container">
+  <!--搜索-->
+  <view class="search">
+    <view class="scan">
+      <image class="widgets-img" src="/images/scan.png" mode="aspectFit" />
+    </view>
+    <view class="search-input">
+      <image class="widgets-img" src="/images/search.png" mode="aspectFit" />
+      <input class="input" placeholder="搜索商品" />
+    </view>
+    <view class="scan">
+      <image class="widgets-img" src="/images/chat.png" mode="aspectFit" />
+    </view>
+  </view>
+  <!--可滚动区域-->
+  <scroll-view class="content-scroll" scroll-y="true">
+    <view class="indicator-wrap">
+      <swiper
+        indicator-dots='{{indicatorDots}}'
+        vertical='{{vertical}}'
+        autoplay='{{autoplay}}'
+        interval='{{interval}}'
+        duration='{{duration}}'
+        circular='true'
+        indicator-color='rgba(205,205,205,3)'
+        indicator-active-color="#fff"
+        style="width:100%;height:325rpx;"
+      >
+      <block wx:for="{{swipers}}">
+          <swiper-item>
+            <image class="swiper-item" src="{{item}}" mode="aspectFill"/>
+          </swiper-item>
+      </block>
+      </swiper>
+    </view>
+  </scroll-view>
+</view>
